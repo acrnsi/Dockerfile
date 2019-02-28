@@ -1,7 +1,7 @@
 FROM clearlinux
 MAINTAINER byang1217@gmail.com
 
-RUN swupd verify -fYb -m 26510 -F 26
+RUN swupd verify -fYb -m 26800 -F 26
 RUN swupd bundle-add os-clr-on-clr-dev os-utils-gui-dev web-server-basic scm-server java-basic os-utils-gui-dev
 RUN mkdir -p /run/lock
 RUN clrtrust generate
